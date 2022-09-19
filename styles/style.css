@@ -1,3 +1,30 @@
+:root {
+    --clr-primary-dark: ;
+    --clr-primary-neutral: ;
+    --clr-primary-light: ;
+
+    --clr-secondary-dark: ;
+    --clr-secondary-neutral: ;
+    --clr-secondary-light: ;
+
+    --clr-white: ;
+    --clr-black: ;
+
+    --ff-primary: Arial, sans-serif;
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-regular: 400;
+    --fw-semibold: 500;
+    --fw-bold: 700;
+
+    --fs-regular: 1rem;
+    --fs-large: 1.2rem;
+    --fs-extralarge: 1.5rem;
+    --fs-small: 0.8rem;
+}
+
+
 html {
     background-color: white;
     color: green;
