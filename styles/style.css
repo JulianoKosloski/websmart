@@ -1,4 +1,13 @@
 html {
-    background-color: cyan;
-    color: gold;
+    background-color: white;
+    color: green;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
