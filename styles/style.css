@@ -11,3 +11,11 @@ img {
     display: block;
     max-width: 100%;
 }
+
+.nav-list {
+    display: flex;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
