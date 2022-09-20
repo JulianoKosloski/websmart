@@ -20,6 +20,7 @@
     --fw-bold: 700;
 
     --fs-regular: 1rem;
+    --fs-regular-accent: 1.2rem;
     --fs-large: 1.5rem;
     --fs-extralarge: 2rem;
     --fs-small: 0.8rem;
@@ -109,17 +110,21 @@ img {
     margin: 2.5em;
     list-style: none;
     font-size: var(--fs-regular);
-    color: var(--clr-primary-light);
+    font-weight: var(--fw-regular);
 }
 
 .nav-list a {
-    color: var(--clr-primary-light);
+    color: var(--clr-black);
+    border-bottom: 3px solid transparent;
+    /* box-shadow: inset 0 5 15 0 var(--clr-primary-light); */
+    transition: border-bottom .3s ease-in-out;
 }
 
 .nav-list a:hover {
-    color: var(--clr-secondary-neutral);
+    border-bottom: 3px solid var(--clr-primary-light);
+    /* box-shadow: inset 250px 0 0 0 var(--clr-primary-light); */
 }
 
 .main-content {
-    margin-top: 3%;
+    text-align: center;
 }
