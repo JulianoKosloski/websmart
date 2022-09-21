@@ -27,6 +27,8 @@
     --fs-large: 1.5rem;
     --fs-extralarge: 2rem;
     --fs-small: 0.8rem;
+
+    --sic-logo: url("../images/sic1.png");
 }
 
 [data-theme="dark"] {
@@ -41,6 +43,8 @@
     --clr-white: black;
     --clr-grey: #828A82;
     --clr-black: white;
+
+    --sic-logo: url("../images/sic2.png");
 }
 
 
@@ -103,6 +107,7 @@ footer {
     float: left;
     height: 75px;
     width: 230px;
+    content: var(--sic-logo);
 }
 
 .footer-info {
