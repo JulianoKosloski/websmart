@@ -1,16 +1,16 @@
-function toggleDarkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    var element = document.getElementsByClassName('main-content');
-    element.classList.toggle("dark-mode");
-    var element = document.getElementsByClassName('page-title');
-    element.classList.toggle("dark-mode");
-    var element = document.getElementsByClassName('nav-list');
-    element.classList.toggle("dark-mode");
-    var element = document.getElementsByTagName('h1');
-    element.classList.toggle("dark-mode");
-    var element = document.getElementsByTagName('h2');
-    element.classList.toggle("dark-mode");
-    var element = document.getElementsByTagName('p');
-    element.classList.toggle("dark-mode");  
- }
+const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        image = document.getElementsById('sic-logo');
+        image.src = "images/sic2.png";
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        image = document.getElementsById('sic-logo');
+        image.src = "images/sic1.png";
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
