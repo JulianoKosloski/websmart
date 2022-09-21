@@ -204,7 +204,7 @@ input:checked + .slider:before {
     transform: translateX(18px);
 }
 
-/* -----------Page content----------------- */
+/* -----------Smart logo----------------- */
 
 #smart-logo {
     display: block;
@@ -228,7 +228,10 @@ input:checked + .slider:before {
 	}
 }
 
+/* -----------Page content----------------- */
+
 .main-content {
+    padding: 3%;
     text-align: center;
 }
 
