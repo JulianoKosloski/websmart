@@ -1,5 +1,5 @@
 
-/* -----------Setting up variables----------------- */
+/* ---------------------------------------Setting up variables------------------------------------------- */
 
 :root {
     --clr-primary-dark: #146E37;
@@ -48,7 +48,7 @@
 }
 
 
-/* -----------Basic styling----------------- */
+/* ---------------------------------------basic styling------------------------------------------- */
 
 html {
     scroll-behavior: smooth;
@@ -129,13 +129,14 @@ footer {
     color: var(--clr-black);
 }
 
-/* -----------Header and navigation----------------- */
+/* ---------------------------------------Header and navigation------------------------------------------- */
 
 .page-top {
     position: sticky;
     top: 0;
     z-index: 20;
     background-color: var(--clr-white);
+    opacity: 0.95;
     display: flex;
     padding: 1%;
     margin: 0;
@@ -168,7 +169,7 @@ footer {
     border-bottom: 3px solid var(--clr-primary-light);
 }
 
-/* -----------Dark theme switch----------------- */
+/* ---------------------------------------Dark theme switch------------------------------------------- */
 
 .switch {
     position: relative;
@@ -219,7 +220,7 @@ input:checked + .slider:before {
     transform: translateX(18px);
 }
 
-/* -----------Smart logo----------------- */
+/* ---------------------------------------Smart logo------------------------------------------- */
 
 #smart-logo {
     display: block;
@@ -243,7 +244,7 @@ input:checked + .slider:before {
 	}
 }
 
-/* -----------Page content----------------- */
+/* ---------------------------------------Page content------------------------------------------- */
 
 .main-content {
     padding: 3%;
