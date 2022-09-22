@@ -107,6 +107,9 @@ header {
 }
 
 footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
     padding-top: 20px;
     display: flex;
     gap: 0;
@@ -261,12 +264,12 @@ input:checked + .slider:before {
 }
 
 .side-nav {
-    float: center;
+    float: left;
     border: 1px solid var(--clr-black);
     background-color: var(--clr-white);
     font-size: var(--fs-regular);
     font-weight: var(--fw-semibold);
-    width: 90%;
+    width: 30%;
     height: 300px;
 }
 
@@ -275,7 +278,7 @@ input:checked + .slider:before {
     background-color: inherit;
     color: var(--clr-black);
     padding: 0;
-    width: 100%;
+    width: 30%;
     border: none;
     outline: none;
     text-align: left;
@@ -284,7 +287,7 @@ input:checked + .slider:before {
   }
 
 .side-nav button:hover {
-background-color: var(--clr-grey);
+background-color: var(--clr-primary-light);
 }
 
 .side-nav button.active {
@@ -292,10 +295,11 @@ background-color: var(--clr-grey);
   }
   
 .tab-info-content {
-    float: left;
+    float: right;
+    display: none;
     padding: 0px 12px;
     border: 1px solid #ccc;
-    width: 70%;
+    width: 30%;
     border-left: none;
     height: 300px;
   }

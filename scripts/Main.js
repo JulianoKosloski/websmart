@@ -32,3 +32,24 @@ function openPageTab(pageId) {
 document.getElementById("defaultOpen").click(); 
 
 // Vertical info tabs --------------------------------------------------------------------------------
+
+function openTabInfo(event, infoId) {
+    // Declare all variables
+    var i, info, sidetabs;
+  
+    // Get all elements with class="tab-info-content" and hide them
+    info = document.getElementsByClassName("tab-info-content");
+    for (i = 0; i < info.length; i++) {
+      info[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tab-info" and remove the class "active"
+    sidetabs = document.getElementsByClassName("tab-info");
+    for (i = 0; i < sidetabs.length; i++) {
+      sidetabs[i].className = sidetabs[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(infoId).style.display = "block";
+    event.currentTarget.className += " active";
+  } 
