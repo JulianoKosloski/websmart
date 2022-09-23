@@ -71,7 +71,7 @@ body {
 }
 
 h1 {
-    padding: 0;
+    padding: 3%;
     margin: 0;
     font-size: var(--fs-extralarge);
     font-weight: var(--fw-bold);
@@ -119,10 +119,10 @@ header {
 }
 
 footer {
+    display: flex;
     bottom: 0;
     width: 100%;
-    padding-top: 20px;
-    display: flex;
+    padding-top: 40px;
     gap: 0;
     font-size: var(--fs-small);
     background-color: var(--clr-white);
@@ -139,19 +139,19 @@ footer {
     list-style: none;
     padding: 0px;
     padding-top: 15px;
-    margin: 0px;
+    margin: 0;
     color: var(--clr-black);
 }
 
 /* ---------------------------------------Header and navigation------------------------------------------- */
 
 .page-top {
+    display: flex;
     position: sticky;
     top: 0;
     z-index: 20;
     background-color: var(--clr-white);
     opacity: 1.0;
-    display: flex;
     padding: 1%;
     margin: 0;
     gap: 1rem;
@@ -267,8 +267,10 @@ input:checked + .slider:before {
 
 .main-content {
     padding: 0;
+    margin: 0;
     text-align: center;
-    padding-bottom: 50px;
+    padding-top: 3%;
+    padding-bottom: 10%;
 }
 
 .tab-content {
@@ -279,11 +281,13 @@ input:checked + .slider:before {
 }
 
 .side-nav {
+    position: fixed;
+    top: 20%;
     float: left;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: auto;
     background-color: var(--clr-offwhite);
-    width: 30%;
+    width: 25%;
+    height: 65%;
 }
 
 .side-nav h3 {
@@ -321,8 +325,12 @@ input:checked + .slider:before {
 .tab-info-content {
     float: right;
     display: none;
-    padding: 10px;
-    width: 60%;
+    padding: 1%;
+    height: 70%;
+    width: 70%;
     border: none;
-    height: 300px;
   }
+
+#default-auto, #default-dev, #default-info, #default-dev-info {
+    padding-bottom: 70% !important;
+}

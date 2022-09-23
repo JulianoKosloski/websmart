@@ -26,6 +26,10 @@ function openPageTab(pageId) {
 
     // Display the current tab
     document.getElementById(pageId).style.display = "block";
+    document.getElementById("default-auto").style.display = "block";
+    document.getElementById("default-dev").style.display = "block";
+    document.getElementById("default-info").style.display = "block";
+    document.getElementById("default-dev-info").style.display = "block";
 }
 
 // Keep Home open by default 
