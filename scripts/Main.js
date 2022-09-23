@@ -24,8 +24,16 @@ function openPageTab(pageId) {
       tab[i].style.display = "none";
     }
 
+    // Get all elements with class="tab-info-content" and hide them
+    info = document.getElementsByClassName("tab-info-content");
+    for (i = 0; i < info.length; i++) {
+      info[i].style.display = "none";
+    }
+
     // Display the current tab
     document.getElementById(pageId).style.display = "block";
+
+    //Display the default content for that tab
     document.getElementById("default-auto").style.display = "block";
     document.getElementById("default-dev").style.display = "block";
     document.getElementById("default-info").style.display = "block";
