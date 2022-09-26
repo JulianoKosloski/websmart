@@ -36,9 +36,9 @@
 
 [data-theme="dark"] {
     --clr-primary-dark: #3FA110; 
-    --clr-primary-neutral: #D7E6CB;
-    --clr-primary-light: white ;
-    --clr-primary-extralight: #828A82 ;
+    --clr-primary-neutral: #A0DCBC;
+    --clr-primary-light: #3FA110 ;
+    --clr-primary-extralight: white ;
 
     --clr-secondary-dark: #8C5F0F;
     --clr-secondary-neutral: #E6A500;
@@ -47,7 +47,7 @@
     --clr-white: black;
     --clr-offwhite: #323C32;
     --clr-grey: #5A645A;
-    --clr-darkgrey: #AAB0AA;
+    --clr-darkgrey: #323C32;
     --clr-black: white;
 
     --sic-logo: url("../images/sic2.png");
@@ -125,6 +125,7 @@ footer {
     width: 100%;
     padding-top: 40px;
     gap: 0;
+    z-index: 30;
     font-size: var(--fs-small);
     background-color: var(--clr-white);
 }
@@ -286,7 +287,7 @@ input:checked + .slider:before {
     top: 20%;
     float: left;
     overflow: auto;
-    background-color: var(--clr-offwhite);
+    background-color: var(--clr-white);
     width: 25%;
     height: 65%;
 }
