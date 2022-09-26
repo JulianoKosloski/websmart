@@ -65,3 +65,5 @@ function openTabInfo(event, infoId) {
     document.getElementById(infoId).style.display = "block";
     event.currentTarget.className += " active";
   } 
+
+  // VSide nav toggle --------------------------------------------------------------------------------
