@@ -299,7 +299,7 @@ input:checked + .slider:before {
     overflow: auto;
     background-color: var(--clr-white);
     width: 25%;
-    height: 65%;
+    height: 60%;
 }
 
 .side-nav h3 {
@@ -343,10 +343,6 @@ input:checked + .slider:before {
     width: 70%;
     border: none;
   }
-
-#default-auto, #default-dev, #default-info, #default-dev-info {
-    padding-bottom: 70% !important;
-}
 
 /* ---------------------------------------Different screen sizes------------------------------------------- */
 

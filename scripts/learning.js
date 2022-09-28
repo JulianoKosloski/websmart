@@ -20,6 +20,12 @@ function myFunction(attribute) { //here I created a function that changes the co
     document.getElementById("test").innerHTML = attribute; //write into html element
 }
 
+/* 
+This is a multiline
+comment
+oh yeah
+*/
+
 document.write() // to write html output 
 
 window.alert() // to create an alert box
