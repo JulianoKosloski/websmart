@@ -38,3 +38,65 @@ console.log() // write into the terminal
 
 // first declare variables, as such: let x, y, z and then use them to store values (though it can be done in the same line)
 
+// You can create a const object: -----> works with arrays too (you change the content, but not reassign it entirely)
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// You can change a property:
+car.color = "red";
+
+// You can add a property:
+car.owner = "Johnson"; 
+
+let myXP = 2**10;
+console.log(myXP);
+
+typeof myXP; //-> will return Number
+myXP = "Treta"; //will now return String (I can change the value but I cannot reassign with 'let myXP = "Treta"')
+
+const person = { //can create an object and put a function inside one of its attributes
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+
+//there's also an arrow function to simplify function writing, in the following pattern->   let myFunction = (a, b) => a * b;
+hello = () => "Hello, world!"; //assigns "Hello, world" to a variable -> you can remove brackets if the func has only one statement
+
+let mySum = (value1, value2) => { return value1 + value2};
+
+class Animal {
+
+constructor(name, size) {
+    this.name = name;
+    this.size = size;
+}
+}
+
+let Bear = new Animal("Bear", "BigMode");
+let Dog = new Animal("Dog", "Medium");
+
+export {Bear, Dog};
+// this allows me to import the named exports in another file as in: import {Bear, Dog} from "learning.js"
+
+export default Animal; 
+  //with this default export, it allows me to import this class in another js file as in import Animal from "learning.js"
+
+// JSON is javascript object notation -> language independent way of sending and storing data (can be used in noSQL databases such as MongoDB and is also acessed by HTTP requests)
+
+// JSON example
+
+let myJSON = {
+"Animals":[ //array of three objects
+    {"name": "Bear", "size": "BigMode"},
+    {"name": "Dog", "size": "Medium"},
+    {"name": "Elephant", "size": "BigMode"}
+]
+}
+
+myJSON.Animals[0]["name"] = "NewBigBear"; //I can acess JSON arrays like this if they are already parsed into JS
+
+//or, if I have a JSON in another file
+// JSON.parse(text) will turn a JSON string into an object that can be used in html
