@@ -1,3 +1,18 @@
+// Display nav --------------------------------------------------------------------------------
+
+function displayNav() {
+
+  var current = document.getElementById("top-nav").style.display;
+
+  if (current == "none") {
+    document.getElementById("top-nav").style.display = "block";
+  }
+  else {
+    document.getElementById("top-nav").style.display = "none";
+  }
+
+}
+
 // Dark mode switch --------------------------------------------------------------------------------
 
 const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
