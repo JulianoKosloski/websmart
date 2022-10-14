@@ -4,7 +4,7 @@ I developed this website at Sicredi Integração PR/SC to store and share inform
 
 The idea for this website came after maintaining for a couple months an old website that had been created for the same purpose. That website had several problems in its design, structure and acessibility. 
 
-That motivated me to create a new one with good practices in mind and modern CSS (flexbox) syntax, while also following the design guidelines of the company. 
+That motivated me to create a new one with good practices in mind, responsiveness and modern CSS (flexbox) syntax, while also following the design guidelines of the company. 
 
 Developing this website helped me a lot in learning how to work with HTML, CSS, Javascript and several other web tools. 
 
