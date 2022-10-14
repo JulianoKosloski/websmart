@@ -138,7 +138,7 @@ footer {
     bottom: -200px;
     width: 100vw;
     font-family: var(--ff-secondary);
-    /* padding-top: 10rem; */
+    padding-top: 10rem;
     gap: 1rem;
     font-size: var(--fs-small);
     background-color: var(--clr-white);
