@@ -17,6 +17,9 @@
     --clr-darkgrey: #AAB0AA;
     --clr-black: black;
 
+    --clr-pagetop: #e1e6e1;
+    --clr-infoh3: #e1e6e16e;
+
     --ff-primary: 'Exo 2', sans-serif;
     --ff-secondary: 'Nunito', sans-serif;
     --ff-body: var(--ff-primary);
@@ -45,6 +48,9 @@
     --clr-secondary-neutral: #E6A500;
     --clr-secondary-light: #FFCD00;
 
+    --clr-pagetop: #323C32;
+    --clr-infoh3: #323c326e;
+
     --clr-white: black;
     --clr-offwhite: #323C32;
     --clr-grey: #5A645A;
@@ -71,10 +77,12 @@ html {
 }
 
 body {
+    overflow-x: hidden;
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 0 0 0 1%;
-    margin: 0;
+    min-height: 100vh; 
     background-color: var(--clr-white);
     font-family: var(--ff-body);
     line-height: 1.7;
@@ -130,15 +138,18 @@ header {
     padding: 0;
     margin: 0;
 }
+/* added this list style to try and fix formatting across browsers */
+ul, li {
+    list-style-position: inside; 
+}
 
 footer {
-    position: relative;
+    position: absolute;
     display: flex;
-    height: 10vh;
-    bottom: -200px;
+    height: 3rem;
+    bottom: 0;
     width: 100vw;
     font-family: var(--ff-secondary);
-    padding-top: 10rem;
     gap: 1rem;
     font-size: var(--fs-small);
     background-color: var(--clr-white);
@@ -158,6 +169,11 @@ footer {
     color: var(--clr-black);
 }
 
+.footer-email {
+    color: var(--clr-primary-light);
+    text-decoration: none;
+}
+
 /* ---------------------------------------Header and navigation------------------------------------------- */
 
 .page-top {
@@ -165,11 +181,20 @@ footer {
     position: sticky;
     top: 0;
     z-index: 20;
-    background-color: var(--clr-white);
+    background-color: var(--clr-pagetop);
+    border-radius: 10px;
     opacity: 1.0;
     padding: 1%;
     margin: 0;
     gap: 1.5rem;
+}
+
+.top-logo {
+    float: left;
+    margin-top: 9px;
+    height: 43px;
+    width: 172px;
+    content: var(--sic-logo);
 }
 
 .page-title {
@@ -177,10 +202,14 @@ footer {
     margin: 0;
 }
 
+.page-title:hover {
+    cursor: pointer;
+}
+
 .nav-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
     padding: 0;
     margin-left: 1rem;
     list-style: none;
@@ -305,14 +334,12 @@ input:checked + .slider:before {
 
 .tab-content {
     display: none;
-    padding: 0;
-    padding-top: 20px;
+    padding: 20px 0 100px 0;;
     margin: 0;
 }
-/* TODO maybe hide side nav or make it horizontal in smaller screens */
+
 .side-nav { 
     position: fixed;
-    top: 25%;
     float: left;
     overflow: auto;
     background-color: var(--clr-white);
@@ -329,14 +356,13 @@ input:checked + .slider:before {
 
 .process {
     text-align: center;
-    color: var(--clr-black);
 }
 
 .side-nav button {
     display: block;
     background-color: inherit;
     font-size: var(--fs-regular);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-regular);
     color: var(--clr-black);
     padding: 0;
     width: 100%;
@@ -369,12 +395,28 @@ input:checked + .slider:before {
 
   .tab-info-content h3 {
     font-weight: var(--fw-semibold);
+    background-color: var(--clr-infoh3);
+    height: 5%;
+    margin: 0 15% 0 15%;
+    border-radius: 10px;
+  }
+
+  .tab-info-content ul {
+    color: var(--clr-black);
+  }
+
+  #default-auto, #default-dev {
+    height: 60%;
   }
 
 /* ---------------------------------------Different screen sizes------------------------------------------- */
 
 @media only screen and (min-width:200px) and (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
     
+    .top-logo {
+        display: none;
+    }
+
     .page-top {
         position: static;
         gap: 0.8rem;
@@ -394,6 +436,10 @@ input:checked + .slider:before {
 
 @media only screen and (min-width:321px) and (max-width:400px)  { /* smartphones, Android phones, landscape iPhone */
 	
+    .top-logo {
+        display: none;
+    }
+
     .page-top {
         position: static;
         gap: 0.8rem;
@@ -412,6 +458,10 @@ input:checked + .slider:before {
 }
 
 @media only screen and (min-width:401px) and (max-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+    .top-logo {
+        display: none;
+    }
 
     .page-top {
         position: static;
@@ -432,6 +482,10 @@ input:checked + .slider:before {
 
 @media only screen and (min-width:601px) and (max-width:767px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 	
+    .top-logo {
+        display: none;
+    }
+
     .page-top {
         position: static;
         gap: 0.8rem;

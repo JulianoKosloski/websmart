@@ -11,37 +11,36 @@
 </head> 
 <body>
 
-<!-----TODO----->
-<!--
- - shrink navbar on scroll and mobile menu (use W3 tips and tricks)
- - each vertical tab should have acordions to hide and expand content
--->
-
 <!------------------------------Header and nav---------------------------------->
 
     <section class="page-top">
-        <div class="page-title">
+
+        <img class="top-logo" id="sic-logo-top" src="images/sic1.png" alt="Logo do Sicredi">
+        <div href="" class="page-title" onclick="openPageTab('home-content')">
         <h1>Smart</h1>
         </div>
+
         <label class="switch">
             <input type="checkbox">
             <span class="slider"></span>
         </label>
         <buttom class="nav-burger" onclick="displayNav()">&#9776</buttom>
+
         <header>
             <nav class="main-nav">
                 <ul class="nav-list" id="top-nav">
 
                     <li><button class="page-tab" id="defaultOpen" onclick="openPageTab('home-content')">Home</button></li>
                     <li><button class="page-tab" onclick="openPageTab('automation-content')">Automações</button></li>
-                    <li><button class="page-tab" onclick="openPageTab('development-content')">Em desenvolvimento</button></li>
+                    <li><button class="page-tab" onclick="openPageTab('development-content')">Projetos</button></li>
                     <li><button class="page-tab" onclick="openPageTab('demands-content')">Demandas</button></li>
                     <li><button class="page-tab" onclick="openPageTab('info-content')">Informações</button></li>
-                    <li><button class="page-tab" onclick="openPageTab('dev-content')">Dev Info</button></li>
+                    <li><button class="page-tab" onclick="openPageTab('dev-content')">Desenvolvimento</button></li>
 
                 </ul>
             </nav>  
         </header>
+
     </section>
 
 <!------------------------------Main content---------------------------------->
@@ -53,8 +52,8 @@
         <div class="tab-content" id="home-content">
 
             <img id="smart-logo" src="images/smart.png" alt="Logo do Robô Smart">
-            <h1>Seja bem-vindo(a) ao Portal de Automações Smart</h1>
-            <h2>Navegue pelas opções do menu para mais informações</h2>
+            <h1>Portal de Automações Smart</h1>
+            <h2>Navegue pelo menu para mais informações 🤖</h2>
 
         </div>
 
@@ -63,321 +62,345 @@
         <div class="tab-content" id="automation-content">
 
             <div class="side-nav">
-                <h3>Lista de Automações</h3>
-                <button class="tab-info" onclick="openTabInfo(event,'auto1')">Automation 1</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto2')">Automation 2</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto3')">Automation 3</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto4')">Automation 4</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto5')">Automation 5</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto6')">Automation 6</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto7')">Automation 7</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto8')">Automation 8</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto9')">Automation 8</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto10')">Automation 9</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto11')">Automation 10</button>
-                <button class="tab-info" onclick="openTabInfo(event,'auto12')">Automation 11</button>
+                <h3>Automações</h3>
+                <button class="tab-info" onclick="openTabInfo(event,'auto1')">Seguros Efetivados Ren. Todos</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto2')">Relatórios Diários Diretoria</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto3')">Tabela Aux. Associados Fluid</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto4')">Relatório Prévia do Risco</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto5')">Importações Ciclo de Crédito</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto6')">Verificador Tarifa Gravame</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto7')">Importações HGV Web Diário</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto8')">Seguros a Renovar Upload Fluid</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto9')">Processos Abertos Todos Fluid</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto10')">Processos Abertos Renovação Fluid</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto11')">Email Assoc sem Capital Integralizado</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto12')">Fichas de Automação</button>
+                <button class="tab-info" onclick="openTabInfo(event,'auto13')">Atualização BD_ASSO</button>
             </div>
 
             <div id="default-auto" class="tab-info-content">
                 <h3>Clique em uma automação para mais informações</h3>
             </div>
 
-            <div id="auto1" class="tab-info-content">
+            <div id="auto1" name="Seguros Efetivados Ren Todos" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p> A automação gera relatório pelo FLUID (Todos os Seguros Efetivados Renovados) 
+                    e envia para os colaboradores apropriados.
+                </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p> Libera o tempo dos colaboradores para outras atividades,
+                    além de reduzir a possibilidade de erro humano e aumentar a confiabilidade ao 
+                    automatizar o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Fluid, UiPath</p>
                 <h3>Documentos</h3>
                 <p>------incluir documentos------</p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessar o sistema e gerar relatório</li>
+                    <li>Enviar para os colaboradores responsáveis</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa o sistema de forma automatizada e eficiente</li>
+                    <li>Envia para os colaboradores responsáveis</li>
                 </ol>
             </div>
               
-            <div id="auto2" class="tab-info-content">
+            <div id="auto2" name="Relatórios Diários Diretoria" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p> A automação acessa diversos sistemas através do AC-Client para geração de Relatórios 
+                    da Diretoria diariamente </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p> Libera o tempo dos colaboradores para outras atividades, além de reduzir 
+                    a possibilidade de erro humano e aumentar a confiabilidade ao automatizar o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>SIAT, SACG, UiPath </p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessar o sistema e gerar relatórios</li>
+                    <li>Enviar para os colaboradores responsáveis</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa o sistema de forma automatizada e eficiente</li>
+                    <li>Envia os relatórios para os colaboradores responsáveis</li>
                 </ol>
             </div>
               
-            <div id="auto3" class="tab-info-content">
+            <div id="auto3" name="Tabela Auxiliar Associados Fluid" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p>A automação acessa o sistema Fluid, gera um relatório e realiza o upload da Tabela Auxiliar de Associados. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p>Libera o tempo dos colaboradores para outras atividades, além de reduzir a possibilidade de erro humano e aumentar a confiabilidade ao automatizar o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Fluid, Excel, UiPath</p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessar o Fluid</li>
+                    <li>Gerar relatório</li>
+                    <li>Copiar dados para outra planilha</li>
+                    <li>Importar a nova Tabela Auxiliar</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa o Fluid de forma automatizada</li>
+                    <li>Gera relatórios</li>
+                    <li>Processa os dados</li>
+                    <li>Importa nova Tabela Aux de Associados</li>
                 </ol>
             </div>
 
-            <div id="auto4" class="tab-info-content">
+            <div id="auto4" name="Relatório Prévia do Risco" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p> A automação acessa o sistema de gestão de crédito da HGV, efetua o download
+                    de dois relatórios (Provisões de Risco, opções Exportar e Exportar detalhes), 
+                    processa os arquivos, excluindo linhas relacionadas a prejuízo e excluindo 
+                    a coluna de Inadimplência, para então copiar os dados dos dois arquivos em 
+                    uma planilha base que calcula os valores de risco por Motivo e por Agência
+                    (utilizados para a atualização do dashboard). </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p> Libera o tempo dos colaboradores para outras atividades, reduzindo em muito o 
+                    tempo efetivo do processo e permitindo a atualização dinâmica do dashboard de risco. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>HGV, Excel, Python</p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa o sistema HGV e gera relatórios</li>
+                    <li>Filtra e trata os dados dos relatórios</li>
+                    <li>Transfere dados e realiza cálculos manualmente</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa a HGV e gera relatórios</li>
+                    <li>Trata os dados de forma automática</li>
+                    <li>Atualiza banco de dados</li>
+                    <li>PowerBI é atualizado de forma automática</li>
                 </ol>
             </div>
 
-            <div id="auto5" class="tab-info-content">
+            <div id="auto5" name="Importações Ciclo de Crédito" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p>A automação acessa os sistemas SACG e SIAT através do AC-Client para gerar diversos relatórios, importa os arquivos na plataforma HGV e envia um email avisando os colaboradores sobre a importação. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p>Libera o tempo dos colaboradores para outras atividades, reduzindo a chance de erro humano e acelerando o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>SIAT, SACG, HGV, Python</p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa o AC-Client e gera relatórios</li>
+                    <li>Importa relatórios na HGV</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa a plataforma e gera relatórios de forma automatizada</li>
+                    <li>Importa arquivos na HGV</li>
+                    <li>Envia email avisando os colaboradores responsáveis</li>
                 </ol>
             </div>
 
-            <div id="auto6" class="tab-info-content">
+            <div id="auto6" name="Verificador Tarifa Gravame" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p>A automação gera o relatório 355 no sistema SACG e processa o padrão de caracteres do arquivo para encontrar inconsistências entre os valores cobrados de Tarifa Gravame e os valores-padrão, enviando um email para o/a colaborador/a responsável caso existam valores incorretos. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p>Reduz o tempo dispendido pelo colaborador e o libera para outras atividades</p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>SACG, UiPath</p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa a plataforma e gera relatório</li>
+                    <li>Identifica visualmente valores de tarifa</li>
+                    <li>Compara com os valores adequados </li>
+                    <li>Define se foi aplicada tarifa incorreta</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa o sistema e gera relatório</li>
+                    <li>Varre o arquivo utilizando REGEX para encontrar valores</li>
+                    <li>Encontra discrepâncias de valores</li>
+                    <li>Envia email para os colaboradores responsáveis</li>
                 </ol>
             </div>
 
-            <div id="auto7" class="tab-info-content">
+            <div id="auto7" name="Relatórios e Upload HGV Web Diário" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p> A automação acessa diversos sistemas pelo sistema AC-Client e OpenData,
+                    gera relatórios, aguarda o tempo necessário para que sejam processados e 
+                    os importa na plataforma HGV. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p> Libera o tempo dos colaboradores para outras atividades, além de reduzir a 
+                    possibilidade de erro humano e aumentar a confiabilidade ao automatizar o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>SIAT, SACG, Open Data, HGV, UiPath</p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessar e gerar relatórios no AC-Client e OpenData</li>
+                    <li>Acessar HGV</li>
+                    <li>Importar todos os relatórios</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa plataformas e gera relatórios de forma automatizada</li>
+                    <li>Importa arquivos na HGV</li>
+                    <li>Envia email aos colaboradores avisando do término do processo</li>
                 </ol>
             </div>
 
-            <div id="auto8" class="tab-info-content">
+            <div id="auto8" name="Seguros a Renovar Upload Fluid" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p> A automação gera relatório de Seguros a Renovar pelo sistema Fluid e o envia 
+                    para os colaboradores responsáveis. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p> Libera o tempo dos colaboradores para outras atividades, além de reduzir 
+                    a possibilidade de erro humano e aumentar a confiabilidade ao automatizar o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Fluid, UiPath</p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessar a plataforma</li>
+                    <li>Gerar relatório</li>
+                    <li>Enviar para colaboradores responsáveis</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa e gera relatórios de forma automatizada</li>
+                    <li>Envia emails para os colaboradores responsáveis</li>
                 </ol>
             </div>
 
-            <div id="auto9" class="tab-info-content">
+            <div id="auto9" name="Processos Abertos Todos Fluid" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p> A automação gera relatório de todos os processos em aberto pelo sistema Fluid 
+                    e o envia para os colaboradores responsáveis. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p> Libera o tempo dos colaboradores para outras atividades, além de reduzir a 
+                    possibilidade de erro humano e aumentar a confiabilidade ao automatizar o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Fluid, UiPath</p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessar a plataforma</li>
+                    <li>Gerar relatório</li>
+                    <li>Enviar para colaboradores responsáveis</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
-                </ol>
-            </div>
-            <div id="auto10" class="tab-info-content">
-                <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
-                <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
-                <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
-                <h3>Processo Usuário</h3>
-                <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
-                </ol>
-                <h3>Processo Smart</h3>
-                <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa e gera relatórios de forma automatizada</li>
+                    <li>Envia emails para os colaboradores responsáveis</li>
                 </ol>
             </div>
 
-            <div id="auto11" class="tab-info-content">
+            <div id="auto10" name="Processos Abertos Renovação Fluid" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p> A automação gera relatório de todos os processos de renovação em aberto pelo sistema
+                    Fluid e o envia para os colaboradores responsáveis. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p> Libera o tempo dos colaboradores para outras atividades, além de reduzir a 
+                    possibilidade de erro humano e aumentar a confiabilidade ao automatizar o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Fluid, UiPath</p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessar a plataforma</li>
+                    <li>Gerar relatório</li>
+                    <li>Enviar para colaboradores responsáveis</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Acessa e gera relatórios de forma automatizada</li>
+                    <li>Envia emails para os colaboradores responsáveis</li>
                 </ol>
             </div>
 
-            <div id="auto12" class="tab-info-content">
+            <div id="auto11" name="Email Assoc sem Capital Integralizado" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p> A automação acessa o sistema SIAT pelo AC-Client e gera relatório de associados
+                    sem capital integralizado, processando os dados e enviando para os gerentes responsáveis. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p> Libera o tempo dos colaboradores para outras atividades, além de reduzir a possibilidade de erro humano 
+                    e aumentar a confiabilidade ao automatizar o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>SIAT, Excel, UiPath</p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Gerar relatórios de ASCI</li>
+                    <li>Filtrar contas por agência</li>
+                    <li>Enviar emails individuais para cada agência</li>
                 </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
+                    <li>Gera relatório no SIAT</li>
+                    <li>Filtra dados no Excel</li>
+                    <li>Cria arquivos reduzidos para cada agência</li>
+                    <li>Envia emails automaticamente</li>
+                </ol>
+            </div>
+
+            <div id="auto12" name="Fichas de Automação" class="tab-info-content">
+                <h3>Descrição</h3>
+                <p> A automação agiliza o processo de preenchimento e envio de fichas de automação 
+                    e aprovação (necessárias para homologação de novas automações). </p>
+                <h3>Benefícios</h3>
+                <p>Libera o tempo do desenvolvedor para outras atividades, reduzindo erros e acelerando o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>UiPath</p>
+                <h3>Documentos</h3>
+                <p>------incluir documentos------ </p>
+                <h3>Processo Usuário</h3>
+                <ol class="process"> 
+                    <li>Preencher documento manualmente</li>
+                    <li>Enviar documento por email</li>
+                </ol>
+                <h3>Processo Smart</h3>
+                <ol class="process"> 
+                    <li>Gera um formulário automatizado para o usuário</li>
+                    <li>Gera arquivos e envia email automaticamente</li>
+                </ol>
+            </div>
+
+            <div id="auto13" name="Atualização BD_ASSO" class="tab-info-content">
+                <h3>Descrição</h3>
+                <p> A automação gera relatórios no Fluid e no Administrador de Canais e 
+                    transfere esses dados para uma planilha conectada ao PowerBI. </p>
+                <h3>Benefícios</h3>
+                <p>Libera o tempo do colaborador para outras atividades, reduzindo erros e acelerando o processo. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Fluid, Adm Canais, Excel, Python</p>
+                <h3>Documentos</h3>
+                <p>------incluir documentos------ </p>
+                <h3>Processo Usuário</h3>
+                <ol class="process"> 
+                    <li>Acessar plataformas</li>
+                    <li>Gerar relatórios</li>
+                    <li>Copiar dados para a planilha</li>
+                    <li>Atualizar PowerBI manualmente</li>
+                </ol>
+                <h3>Processo Smart</h3>
+                <ol class="process"> 
+                    <li>Acessa plataformas de forma automatizada e eficiente</li>
+                    <li>Transfere dados para os arquivos</li>
+                    <li>Envia email ao colaborador avisando do término da automação</li>
+                    <li>PowerBI é atualizado de forma automática</li>
                 </ol>
             </div>
 
@@ -388,27 +411,52 @@
         <div class="tab-content" id="development-content">
 
             <div class="side-nav">
-                <h3>Lista de Automações em Desenvolvimento</h3>
-                <button class="tab-info" onclick="openTabInfo(event,'dev1')">Dev 1</button>
-                <button class="tab-info" onclick="openTabInfo(event,'dev2')">Dev 2</button>
-                <button class="tab-info" onclick="openTabInfo(event,'dev3')">Dev 3</button>
-                <button class="tab-info" onclick="openTabInfo(event,'dev4')">Dev 4</button>
-                <button class="tab-info" onclick="openTabInfo(event,'dev5')">Dev 5</button>
+                <h3>Projetos em Desenvolvimento</h3>
+                <button class="tab-info" onclick="openTabInfo(event,'dev1')">Atualização BDs PBI</button>
+                <button class="tab-info" onclick="openTabInfo(event,'dev2')">Limitador Estorno</button>
+                <button class="tab-info" onclick="openTabInfo(event,'dev3')">[placeholder]</button>
+                <button class="tab-info" onclick="openTabInfo(event,'dev4')">[placeholder]</button>
+                <button class="tab-info" onclick="openTabInfo(event,'dev5')">[placeholder]</button>
             </div>
 
-            <div id="default-dev" class="tab-info-content">
-                <h3>Clique em uma automação em desenvolvimento para mais informações</h3>
+            <div id="default-dev" name="Atualização BD_ASSO" class="tab-info-content">
+                <h3>Clique em um projeto de automação para mais informações</h3>
             </div>
 
-            <div id="dev1" class="tab-info-content">
+            <div id="dev1" name="Atualização BDs PBI" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p>A automação gera relatórios no sistema Fluid e copia os dados desses relatórios para planilhas conectada com a dashboards do PowerBI. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p>Automatizar processo de atualização de dashboards, reduzir tempo dispendido pelos colaboradores. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Fluid, PowerBI, Excel, Python </p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
+                <h3>Processo Usuário</h3>
+                <ol class="process"> 
+                    <li>Acessar plataformas</li>
+                    <li>Gerar relatórios</li>
+                    <li>Copiar para as planilhas adequadas</li>
+                    <li>Atualizar PowerBI manualmente</li>
+                </ol>
+                <h3>Processo Smart</h3>
+                <ol class="process"> 
+                    <li>Acessa os sistemas de forma automatizada e eficiente para realizar o download de relatórios</li>
+                    <li>Transfere dados de um arquivo para o outro</li>
+                    <li>Envia email para o colaborador responsável</li>
+                    <li>PowerBI realiza atualização automática em horário/dia definido</li>
+                </ol>
+            </div>
+              
+            <div id="dev2" name="Limitador Estorno" class="tab-info-content">
+                <h3>Descrição</h3>
+                <p>A automação aciona colaboradores quando o valor de estorno total está se aproximando do limite.</p>
+                <h3>Benefícios</h3>
+                <p>Garantir o acompanhamento do limite e ação rápida da equipe de Ciclo de Crédito. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>To be defined</p>
+                <h3>Documentos</h3>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
                     <li>Teste 1</li>
@@ -425,40 +473,15 @@
                 </ol>
             </div>
               
-            <div id="dev2" class="tab-info-content">
+            <div id="dev3" name="misc" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p>Sagittis elementum. Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p>Aenean finibus porttitor libero, in vehicula tortor. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Sed venenatis tellus quis sagittis elementum. Aenean finibus porttitor libero, in vehicula tortor. </p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
-                <h3>Processo Usuário</h3>
-                <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
-                </ol>
-                <h3>Processo Smart</h3>
-                <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
-                </ol>
-            </div>
-              
-            <div id="dev3" class="tab-info-content">
-                <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
-                <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
-                <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
                     <li>Teste 1</li>
@@ -475,15 +498,15 @@
                 </ol>
             </div>
 
-            <div id="dev4" class="tab-info-content">
+            <div id="dev4" name="outro" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p>Sagittis elementum. Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p>Aenean finibus porttitor libero, in vehicula tortor. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Sed venenatis tellus quis sagittis elementum. Aenean finibus porttitor libero, in vehicula tortor. </p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
                 <ol class="process"> 
                     <li>Teste 1</li>
@@ -500,22 +523,22 @@
                 </ol>
             </div>
 
-            <div id="dev5" class="tab-info-content">
+            <div id="dev5" name="outro" class="tab-info-content">
                 <h3>Descrição</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est.</p>
+                <p>Sagittis elementum. Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
                 <h3>Benefícios</h3>
-                <p> Aenean finibus porttitor libero, in vehicula tortor. Curabitur imperdiet diam ut nulla cursus fermentum. Sed non laoreet nunc. Proin vitae augue mattis, mollis enim eget, sodales mauris. Nulla laoreet diam nec ex bibendum dapibus non vel neque. Proin auctor mattis elit et commodo. Donec vel semper enim, eleifend mattis est. </p>
-                <h3>Sistemas</h3>
-                <p>Lorem</p>
+                <p>Aenean finibus porttitor libero, in vehicula tortor. </p>
+                <h3>Sistemas e Tecnologias</h3>
+                <p>Sed venenatis tellus quis sagittis elementum. Aenean finibus porttitor libero, in vehicula tortor. </p>
                 <h3>Documentos</h3>
-                <p>------incluir documentos------</p>
+                <p>------incluir documentos------ </p>
                 <h3>Processo Usuário</h3>
-                <ol class="process"> 
-                    <li>Teste 1</li>
-                    <li>Teste 2</li>
-                    <li>Teste 3</li>
-                    <li>Teste 4</li>
-                </ol>
+                    <ol class="process"> 
+                        <li>Teste 1</li>
+                        <li>Teste 2</li>
+                        <li>Teste 3</li>
+                        <li>Teste 4</li>
+                    </ol>
                 <h3>Processo Smart</h3>
                 <ol class="process"> 
                     <li>Teste 1</li>
@@ -529,7 +552,7 @@
         <!-----------------------Demandas----------------------->
 
         <div class="tab-content" id="demands-content">
-            <p>Curabitur imperdiet diam ut nulla cursus</p>
+            <p>Em breve será desenvolvido um caminho na plataforma Fluid para a solicitação de novas automações.</p>
         </div>
 
         <!-----------------------info----------------------->
@@ -551,27 +574,60 @@
 
             <div id="info1" class="tab-info-content">
                 <h3>O que é RPA?</h3>
-                <p>RPA é a sigla em inglês para Robotic Process Automation (Automação Robótica de Processos) e consiste no desenvolvimento de robôs virtuais (scripts) que realizam processos repetitivos e padronizados no lugar do usuário.</p>
+                <p> RPA é a sigla em inglês para Robotic Process Automation (Automação Robótica de Processos) e 
+                    consiste no desenvolvimento de robôs virtuais (scripts) que realizam processos repetitivos
+                    e padronizados no lugar do usuário.</p>
             </div>
               
             <div id="info2" class="tab-info-content">
                 <h3>Quais são as vantagens de automatizar processos?</h3>
-                <p>Paris is the capital of France.</p>
+                <p> A automação de processos permite liberar o tempo dos colaboradores para outras atividades,
+                    além de reduzir custos, tempo de operação e a chance de erro humano durante
+                    processos repetitivos</p>
             </div>
               
             <div id="info3" class="tab-info-content">
                 <h3>Quais são as restrições para o desenvolvimento de automações?</h3>
-                <p>Tokyo is the capital of Japan.</p>
+                <p> Para ser automatizado, um processo deve ter etapas claras que não mudem com frequência,
+                    permitindo a replicação do processo humano pelo robô. Algums sistemas não
+                    estão liberados para automação, seja por questões de contrato com o fornecedor ou por
+                    segurança de informações sensíveis.
+                </p>
+                <p>
+                    Sistemas que não estão liberados para automação:
+
+                    <ul>
+                        <li>SIS</li>
+                        <li>SAP</li>
+                        <li>Rubi</li>
+                        <li>Por Você</li>
+                        <li>Folha</li>
+                        <li>Nova Plataforma PF</li>
+                        <li>Novo ATM</li>
+                        <li>Novo Caixa</li>
+                        <li>IB - Internet Banking</li>
+                        <li>SAS</li>
+                        <li>CRM, 3C (Siebel)</li>
+                        <li>Tableau</li>
+                    </ul>
+                </p>
             </div>
 
             <div id="info4" class="tab-info-content">
                 <h3>Quanto tempo leva para desenvolver uma automação?</h3>
-                <p>Tokyo is the capital of Japan.</p>
+                <p> O tempo de desenvolvimento de software é variável e difícil de ser medido. 
+                    Uma frase clássica da Engenharia de Software é "um desenvolvedor troca uma lâmpada em 1 hora, dois 
+                    desenvolvedores trocam uma lâmpada em duas horas". Essa frase alude ao fato de que
+                    nem sempre o aumento dos recursos destinados ao desenvolvimento tem efeito sobre
+                    a velocidade de produção. Contanto, é possível estimar o desenvolvimento de 
+                    automações de cunho similar. As automações desenvolvidas aqui no CA, considerando 
+                    apenas um desenvolvedor, tendem a levar de 3 a 5 semanas para serem completadas.
+                </p>
             </div>
 
             <div id="info5" class="tab-info-content">
                 <h3>MISC</h3>
-                <p>dnasdjasndand</p>
+                <p>[a preencher]</p>
             </div>
 
 
@@ -582,12 +638,12 @@
         <div class="tab-content" id="dev-content">
             
             <div class="side-nav">
-                <h3>Info Dev</h3>
+                <h3>Tecnologias e Processos</h3>
                 <button class="tab-info" onclick="openTabInfo(event,'infodev1')">Fichas de Automação</button>
                 <button class="tab-info" onclick="openTabInfo(event,'infodev2')">Python</button>
                 <button class="tab-info" onclick="openTabInfo(event,'infodev3')">UiPath</button>
                 <button class="tab-info" onclick="openTabInfo(event,'infodev4')">Agendador de Tarefas</button>
-                <button class="tab-info" onclick="openTabInfo(event,'infodev5')">SYS1 Automações</button>
+                <button class="tab-info" onclick="openTabInfo(event,'infodev5')">Fluid Automações</button>
             </div>
 
             <div id="default-dev-info" class="tab-info-content">
@@ -596,33 +652,40 @@
 
             <div id="infodev1" class="tab-info-content">
                 <h3>Fichas de Automação</h3>
-                <p>London is the capital city of England.</p>
+                <p> Para registrar uma nova automação, o desenvolvedor precisa preencher as fichas de automação
+                    e aprovação, requisitar o "de acordo" da Diretoria e da área de Controles Internos e 
+                    realizar uma requisição no USD (novo usuário impessoal ou mudança de usuário impessoal,
+                    dependendo do sistema acessado).</p>
             </div>
               
             <div id="infodev2" class="tab-info-content">
                 <h3>Python</h3>
-                <p>Paris is the capital of France.</p>
+                <p> A linguagem Python possuí muitos módulos e bibliotecas que auxiliam no desenvolvimento 
+                    de automações, como openpyxl (Excel), csv (arquivos .csv), requests (APIs), smtp/win32 (E-mail),
+                    pyautogui (mouse e teclado), e Selenium/Beautiful Soup (Web Scraping).</p>
             </div>
               
             <div id="infodev3" class="tab-info-content">
                 <h3>UiPath</h3>
-                <p>Tokyo is the capital of Japan.</p>
+                <p> A UiPath permite o desenvolvimento de automações em uma plataforma low-code modular.
+                    É possível reaproveitar blocos de automação que repetem os mesmos processos, além de
+                    conectar a automação a outros sistemas e scripts e monitorar o sucesso das automações
+                    através do Orchestrator.</p>
             </div>
 
             <div id="infodev4" class="tab-info-content">
                 <h3>Agendador de Tarefas</h3>
-                <p>Tokyo is the capital of Japan.</p>
+                <p> Utilizamos o Agendador de Tarefas do Windows para automatizar a execução de scripts UiPath
+                    e arquivos .exe python (compilados com pyinstaller).</p>
             </div>
 
             <div id="infodev5" class="tab-info-content">
-                <h3>SYS1 Automações</h3>
-                <p>Tokyo is the capital of Japan.</p>
+                <h3>Fluid Automações</h3>
+                <p>Árvore do Fluid para requisição de novas automações.</p>
             </div>
 
         </div>
 
-
-        
     </section>
     
 <!------------------------------Footer and Sicredi logo---------------------------------->
@@ -632,7 +695,9 @@
         <ul class="footer-info">
             <li>Área de RPA e BI</li>
             <li>Developed by Juliano Kosloski, 2022</li>
-            <!--can also include contact info such as email and phone-->
+            <li>
+                <a class="footer-email" href="mailto: coop0725_rpa@sicredi.com.br" >coop0725_rpa@sicredi.com.br</a>
+            </li>
         </ul>
     </footer>  
     
