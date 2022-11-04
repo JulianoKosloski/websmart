@@ -10,8 +10,11 @@ Developing this website helped me a lot in learning how to work with HTML, CSS, 
 
 It also led me to check out frameworks such as Tailwind CSS, React and Angular, which I'm studying at the moment. :saxophone: 
 
-### - Main navigation and dark mode
-![main website navigation](https://github.com/JulianoKosloski/websmart/blob/main/ezgif.com-gif-maker.gif)
+### - Navigation
+![navigation](https://github.com/JulianoKosloski/websmart/blob/main/navigation.gif)
 
-### - Navigating through automation content
-![tabs and content](https://github.com/JulianoKosloski/websmart/blob/main/ezgif.com-gif-maker(1).gif)
+### - Dark mode
+![dark mode](https://github.com/JulianoKosloski/websmart/blob/main/dark_mode.gif)
+
+### - Mobile
+![mobile](https://github.com/JulianoKosloski/websmart/blob/main/mobile.gif)
